@@ -32,45 +32,42 @@ chatbot/
 └── README.md
 ```
 
-## Setup Instructions
+## Quick Start
 
-### Backend Setup
+### One-Command Setup
 
-1. Navigate to the backend directory:
+**Option 1: Using Batch File (Recommended for Windows)**
+```bash
+start.bat
+```
+
+**Option 2: Using PowerShell**
+```powershell
+.\start.ps1
+```
+
+Both commands will:
+- Start the backend server at `http://localhost:8000`
+- Start the frontend server at `http://localhost:3000`
+- Open both in separate terminal windows
+
+### Manual Setup (if needed)
+
+#### Backend Setup
+1. Install Python dependencies:
    ```bash
    cd health-chatbot-backend
-   ```
-
-2. Install dependencies:
-   ```bash
    pip install fastapi uvicorn pandas
-   ```
-
-3. Run the backend server:
-   ```bash
    python main.py
    ```
 
-The API will be available at `http://localhost:8000`
-
-### Frontend Setup
-
-1. Navigate to the frontend directory:
+#### Frontend Setup
+1. Install and start React app:
    ```bash
    cd health-chatbot-frontend
-   ```
-
-2. Install dependencies:
-   ```bash
    npm install
-   ```
-
-3. Start the development server:
-   ```bash
    npm start
    ```
-
-The frontend will be available at `http://localhost:3000`
 
 ## API Endpoints
 
